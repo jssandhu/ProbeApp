@@ -1,0 +1,30 @@
+<section>
+    <h1>Register</h1>
+    <form class="form-horizontal" role="form">
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="Email" ng-model="user.email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">Career Stage</label>
+        <div class="col-sm-10">
+          <select class="form-control" required ng-model="user.careerstage">
+            <option value="AL1">AL1</option>
+            <option value="AL2">AL2</option>
+            <option value="SAL1">SAL1</option>
+            <option value="SAL2">SAL2</option>
+            <option value="Manager">Manager</option>
+            <option value="Sr.Manager">Sr.Manager</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button class="btn btn-default" ng-click="register()">Generate Link</button>
+        </div>
+      </div>
+    </form>
+
+</section>

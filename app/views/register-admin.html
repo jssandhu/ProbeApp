@@ -1,0 +1,62 @@
+<section>
+    <h1>Admin Registration</h1>
+    <form class="form-horizontal" role="form">
+      <div class="form-group">
+        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail" placeholder="Email" value="rsha@sapient.com" ng-model="user.username">
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword" value="password" placeholder="Password">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="inputRePassword" class="col-sm-2 control-label">Re-Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputRePassword" value="password" placeholder="Retype Password" ng-model="user.password">
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="form-group">
+        <label for="inputOracle" class="col-sm-2 control-label">Oracle Id</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="inputOracle" value="106521" placeholder="Oracle Id" ng-model="user.oracleid">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="inputMobile" class="col-sm-2 control-label">Mobile</label>
+        <div class="col-sm-10">
+          <input type="tel" class="form-control" id="inputMobile" value="9654150478" placeholder="Mobile" ng-model="user.mobile">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">Career Stage</label>
+        <div class="col-sm-10">
+          <select class="form-control" ng-model="user.careerstage">
+            <option>- select -</option>
+            <option value="AL1">AL1</option>
+            <option value="AL2">AL2</option>
+            <option value="SAL1">SAL1</option>
+            <option value="SAL2">SAL2</option>
+            <option value="Manager">Manager</option>
+            <option value="Sr.Manager">Sr.Manager</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button class="btn btn-default" ng-click="register()">Register</button>
+        </div>
+      </div>
+    </form>
+
+</section>
